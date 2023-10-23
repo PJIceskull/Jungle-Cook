@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Lato-Light;
+  src: url(fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+  font-family: Lato-LightItalic;
+  src: url(fonts/Lato/Lato-LightItalic.ttf);
+}
+@font-face {
+  font-family: Lato-Black;
+  src: url(fonts/Lato/Lato-Black.ttf);
+}
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(../css/fonts/Caveat/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: Caveat-Bold;
+  src: url(../css/fonts/Caveat/Caveat-Bold.ttf);
+}
+nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+nav p,
+nav a {
+  font-family: Caveat-Regular;
+  font-size: 25px;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+nav .logo .circle1,
+nav .logo .circle2,
+nav .logo .circle3,
+nav .logo .circle4 {
+  border-radius: 50%;
+  position: absolute;
+}
+nav .logo .circle1 {
+  background-color: #c7eae4;
+  width: 32px;
+  height: 32px;
+  left: 1px;
+  top: -10px;
+}
+nav .logo .circle2 {
+  background-color: #ffd972;
+  width: 30px;
+  height: 30px;
+  left: 26px;
+  top: 5px;
+}
+nav .logo .circle3 {
+  background-color: #a7e8bd;
+  width: 54px;
+  height: 54px;
+  left: 53px;
+}
+nav .logo .circle4 {
+  background-color: #efa7a7;
+  width: 24px;
+  height: 24px;
+  left: 135px;
+}
+nav .logo p {
+  margin-bottom: 0;
+  z-index: 10;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul li {
+  margin-left: 10px;
+  /* background-color: beige; */
+  padding: 5px;
+  transition: 0.3s;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+nav .login {
+  background-color: #ffd972;
+  border-radius: 26px;
+  width: 9.875vw;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+/*# sourceMappingURL=styles.css.map */
