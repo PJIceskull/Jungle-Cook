@@ -48,7 +48,7 @@ nav .logo .circle1 {
   width: 32px;
   height: 32px;
   left: 1px;
-  top: -10px;
+  top: -8px;
 }
 nav .logo .circle2 {
   background-color: #ffd972;
@@ -101,6 +101,83 @@ nav .login {
   text-align: center;
 }
 
+footer {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 550px;
+}
+footer a,
+footer p {
+  font-family: Lato-LightItalic;
+  font-size: 15px;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer .socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .socialIcons img {
+  height: 19px;
+  width: 19px;
+  margin-left: 40px;
+}
+
+.mobile-Footer {
+  display: none;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.mobile-Footer .footer-Text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  footer {
+    background-color: yellowgreen;
+  }
+  footer .links {
+    width: 400px;
+  }
+  footer a,
+  footer p {
+    font-size: 10px;
+  }
+  footer .socialIcons img {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  footer {
+    display: none;
+  }
+  .mobile-Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 67px;
+  }
+  .mobile-Footer .links {
+    width: 95%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
