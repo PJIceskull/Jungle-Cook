@@ -100,7 +100,87 @@ nav .login {
   width: 9.875vw;
   text-align: center;
 }
+nav .hamburger-menu {
+  margin: auto 0;
+  /*  */
+  display: none;
+  /*  */
+  cursor: pointer;
+}
+nav .hamburger-menu .bar1,
+nav .hamburger-menu .bar2,
+nav .hamburger-menu .bar3 {
+  width: 30px;
+  height: 2.5px;
+  background-color: #000;
+  margin: 8px 0;
+  transition: 0.5s;
+}
+nav .open .bar1 {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+nav .open .bar2 {
+  opacity: 0;
+}
+nav .open .bar3 {
+  transform: rotate(45deg) translate(-8px, -7px);
+}
+nav .open .mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+nav .mobile-menu {
+  /*  */
+  display: none;
+  /*  */
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+nav .mobile-menu li {
+  margin-bottom: 10px;
+}
 
+@media screen and (max-width: 780px) {
+  nav p {
+    font-size: 20px;
+  }
+  nav .logo .circle1 {
+    width: 27.5px;
+    height: 27.5px;
+  }
+  nav .logo .circle2 {
+    width: 25.75px;
+    height: 25.75px;
+    left: 22px;
+  }
+  nav .logo .circle3 {
+    width: 46.35px;
+    height: 46.35px;
+    left: 45.5px;
+  }
+  nav .logo .circle4 {
+    width: 21px;
+    height: 21px;
+    left: 116px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .hamburger-menu {
+    display: block;
+  }
+  nav .hamburger-menu .login {
+    width: 100%;
+    background-color: transparent;
+  }
+}
 footer {
   font-size: 15px;
   display: flex;
@@ -122,6 +202,14 @@ footer p {
 footer a {
   text-decoration: none;
   color: #000;
+}
+footer a:hover {
+  transform: scale(1.1);
+  transition: 0.45s;
+}
+footer a:active {
+  color: #fff;
+  transition: 0.5ms;
 }
 footer p {
   margin-bottom: 0;
@@ -150,9 +238,6 @@ footer .socialIcons img {
 }
 
 @media screen and (max-width: 780px) {
-  footer {
-    background-color: yellowgreen;
-  }
   footer .links {
     width: 400px;
   }
