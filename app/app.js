@@ -26,6 +26,15 @@ function initURLListener() {
   changeRoute();
 }
 
+function initListeners() {
+  // Hamburger Menu
+  // Using Jquery
+  $(".hamburger-menu").on("click", function () {
+    $(this).toggleClass("open");
+  });
+}
+
 $(document).ready(function () {
   initURLListener();
+  initListeners();
 });
