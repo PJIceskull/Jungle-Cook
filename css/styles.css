@@ -115,6 +115,7 @@ nav .login {
   border-radius: 26px;
   width: 9.875vw;
   text-align: center;
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.16);
 }
 nav .hamburger-menu {
   margin: auto 0;
@@ -416,6 +417,67 @@ main {
   #Home-Page .circle2 {
     top: -80px;
   }
+}
+#Login-Page {
+  background-color: #ffd972;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#Login-Page form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+#Login-Page form h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+  font-family: Lato-Black;
+}
+#Login-Page form p {
+  font-family: Lato-LightItalic;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+#Login-Page form input {
+  margin-top: 51.5px;
+  background-color: #ffd972;
+  color: #000;
+  font-family: Lato-Regular;
+  font-size: 12px;
+  width: 206.5px;
+  padding-bottom: 3px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #000;
+}
+#Login-Page form input::placeholder {
+  color: #000;
+}
+#Login-Page form button {
+  height: 52px;
+  background-color: #ffd972;
+  font-family: Caveat-Regular;
+  font-size: 25px;
+  border-radius: 26px;
+  margin-top: 52.5px;
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.16);
+  border-style: none;
+}
+#Login-Page form button:hover {
+  background-color: #000;
+  color: #ffd972;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#Login-Page .login-Form input,
+#Login-Page .login-Form button {
+  width: 209px;
+}
+#Login-Page .signin-Form input,
+#Login-Page .signin-Form button {
+  width: 250px;
 }
 
 /*# sourceMappingURL=styles.css.map */
