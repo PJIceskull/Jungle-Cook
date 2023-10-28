@@ -313,6 +313,9 @@ p {
   justify-content: space-evenly;
   max-width: 1280vw;
 }
+#app button {
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.16);
+}
 
 main {
   min-height: 800px;
@@ -462,7 +465,6 @@ main {
   font-size: 25px;
   border-radius: 26px;
   margin-top: 52.5px;
-  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.16);
   border-style: none;
 }
 #Login-Page form button:hover {
@@ -478,6 +480,13 @@ main {
 #Login-Page .signin-Form input,
 #Login-Page .signin-Form button {
   width: 250px;
+}
+
+@media screen and (max-width: 780px) {
+  #Login-Page {
+    flex-direction: column;
+    height: 1000px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
