@@ -4,9 +4,16 @@ Pierce Issah
 
 ## Website Link
 
+<!-- Web 4 Links -->
+
+<!-- Link to HW-Six -->
+
 [Web-4 link](https://in-info-web4.informatics.iupui.edu/~pissah/N315/homework-six)
 
-<!-- [Github Pages](https://pjiceskull.github.io/Jungle-Cook/) -->
+<!-- Link to HW-Seven -->
+<!-- [Web-4 link](https://in-info-web4.informatics.iupui.edu/~pissah/N315/homework-seven) -->
+
+[Github Pages](https://pjiceskull.github.io/Jungle-Cook/)
 
 ## About Project
 
