@@ -317,6 +317,25 @@ p {
   box-shadow: 0 10px 6px rgba(0, 0, 0, 0.16);
 }
 
+nav,
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+footer {
+  top: 756px;
+}
+
+@media screen and (max-width: 430px) {
+  footer {
+    top: 730px;
+  }
+}
 main {
   min-height: 800px;
   width: 100%;
